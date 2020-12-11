@@ -18,7 +18,7 @@ public class FileScanner<T> {
     }
 
 
-    public void write(T object,String filename){
+    public void write(T object, String filename){
         File file=new File(filename);
             try{
                 FileOutputStream fileOutputStream=new FileOutputStream(file);

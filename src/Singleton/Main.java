@@ -5,17 +5,17 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String>list=new ArrayList<>();
+        List<String> list=new ArrayList<>();
         list.add("test");
         list.add("test1");
         String filename="filename";
-        FileScanner fileScanner=FileScanner.getInstance();
+        FileScanner fileScanner= FileScanner.getInstance();
         fileScanner.write(list,filename);
         List<String> stringList0=fileScanner.read(filename);
         System.out.println(stringList0.get(0)+" "+stringList0.get(1));
 
 
-        List<String>list1=new ArrayList<>();
+        List<String> list1=new ArrayList<>();
         list1.add("test4");
         list1.add("test5");
         String filename2="filename";
